@@ -1,0 +1,103 @@
+#PROBLEM 1
+y=input().split(",")
+d=[]
+for x in y:
+    d.append(int(x))
+    
+Q=[]
+c=50
+h=30
+for no in d:
+    q=(2*c*no)/h
+    f=int(q**(1/2))
+    Q.append(str(f))
+print(','.join(Q))
+        
+?
+    
+
+#PROBLEM 2
+row_num = int(input("Input number of rows: "))
+col_num = int(input("Input number of columns: "))
+multi_list=[] 
+for row in range(row_num):
+    a=[] 
+    for col in range(col_num):
+        a.append(col*row)
+    multi_list.append(a)
+        
+?
+print(multi_list)
+?
+?
+#PROBLEM 3
+mylist = input("Enter list ")
+d= mylist.split(",")
+d.sort()
+print(','.join(d))
+?
+#PROBLEM 4
+my_list=input("Enter your string ")
+d=my_list.split(' ')
+d.sort()
+this_dict={}
+for i in d:
+    y=d.count(i)
+    this_dict.update( {i:y} )
+    
+print(this_dict)
+
+#PROBLEM 5
+class Practice:
+    def equation(self):
+        y=input().split(",")
+        d=[]
+        for x in y:
+            d.append(int(x))
+    
+        Q=[]
+        c=50
+        h=30
+        for no in d:
+            q=(2*c*no)/h
+            f=int(q**(1/2))
+            Q.append(str(f))
+        print(','.join(Q))
+        
+    def array(self):
+        row_num = int(input("Input number of rows: "))
+        col_num = int(input("Input number of columns: "))
+        multi_list=[] 
+        for row in range(row_num):
+            a=[] 
+            for col in range(col_num):
+                a.append(col*row)
+            multi_list.append(a)
+        
+        print(multi_list)
+    
+    def sorting(self):
+        mylist = input("Enter list ")
+        d= mylist.split(",")
+        d.sort()
+        print(','.join(d))
+        
+    def freq(self):
+        my_list=input("Enter your string ")
+        d=my_list.split(' ')
+        d.sort()
+        this_dict={}
+        for i in d:
+            y=d.count(i)
+            this_dict.update( {i:y} )
+    
+        print(this_dict)
+?
+prac= Practice()
+?
+prac.sorting()
+?
+?
+        
+ 
+?
